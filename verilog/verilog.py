@@ -23,7 +23,7 @@ class VERILOGPlugin(Magics):
 
     def updateInstall(self):
         print("Installing iverilog. Please wait... ", end="")
-        args = ["sh", "/content/cad4u/verilog/update_install.sh"]
+        args = ["sh", "/content/ICwhatUC/verilog/update_install.sh"]
 
         output = subprocess.check_output(args, stderr=subprocess.STDOUT)
         output = output.decode('utf8')
@@ -116,7 +116,7 @@ class VERILOGPlugin(Magics):
         
         import sys
         sys.path.insert(0,'.')
-        from cad4u.verilog.vcd_parser.vcd_plotter import VcdPlotter
+        from ICwhatUC.verilog.vcd_parser.vcd_plotter import VcdPlotter
 
         op_dict = []
         sign_list = []
